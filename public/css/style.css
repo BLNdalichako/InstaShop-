@@ -1,0 +1,142 @@
+html {
+    font-family: roboto;
+    background: url('BackgroundImage.jpg') no-repeat center fixed;
+    background-size: cover;
+    font-size: 16px;
+}
+
+body {margin: 1rem 0;}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template:
+        "header header header header" 1fr
+        "main main main main" 7.75fr
+        "footer footer footer footer" 1fr;
+    align-content: space-between;
+}
+
+#logo {
+    font-family: Cookie;
+    font-size: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    padding: 0 1rem;
+    align-items: baseline;
+}
+
+.button {
+    background-color: grey;
+    padding: 0.5em 1.5em;
+    border-radius: 24px;
+}
+
+a.text-link {
+    font-size: 0.75rem;
+}
+
+.text-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.input_bar {
+    color: grey;
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+}
+
+.sign_up_bar {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    grid-area: main;
+    align-self: start;
+    margin: 3rem 0;
+    text-align: center;
+    padding: 2em;
+}
+
+.search_bar {
+    margin: 1rem auto 0;
+    padding: 0.75em;
+    min-width: 50%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;   
+    grid-area: footer;
+    align-self: end;
+    padding: 0 1rem;
+    align-items: baseline;
+}
+
+.sign_up_form {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+}
+
+.user_agreement {
+    font-size: 0.5rem;
+}
+
+.welcome-text {
+    width: 60%;
+    margin: auto;
+}
+
+.header-nav {
+    margin-left: 1rem;
+}
+
+.header-left, .footer-left {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.header-right, .footer-right {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.footer-left, .footer-right {
+    padding: 0.75rem 0;
+    align-items: baseline;
+}
+
+.social-icon {
+    padding: 0 0 0 1rem;
+}
+
+.footer_link {
+    padding: 0 1.5rem 0 0;
+}
+
+.active {
+    color: white;
+    font-weight: bold;
+}

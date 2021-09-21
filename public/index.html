@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>InstaShop</title>
+        <script src="js/script.js"></script>
+        <link rel="shortcut icon" href="/images/logo.png"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+        <script src="https://kit.fontawesome.com/2f584dc372.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--TODO check out the <base> element-->
+        <!-- TODO Implement the tab icon -->
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="header">
+                <!--TODO use a logo instead-->
+                <div class="header-left">
+                    <a href="index.html" id="logo">InstaShop</a>
+                </div>
+                <!--i class="fas fa-bars menu_icon"></i-->        
+                <!--TODO Design a transformative and revealing menu icon-->
+                <nav class="header-right"> 
+                    <a href="recommended.html" id="recommended-btn" class="button text-link header-nav">Recommended</a>
+                    <a href="popular_shops.html" id="popular-btn" class="button text-link header-nav">Popular Shops</a>
+                    <a href="recent_posts.html" id="recent-btn" class="button text-link header-nav">Recent Posts</a>
+                    <a href="sign_up.html" class="icon-link header-nav">
+                        <i class="fas fa-user account_icon"></i>            
+                    </a>
+                </nav>
+            </header>
+
+            <main class="main">
+                <h1 class="welcome-text">Browse Tanzanian instagram merchants and shops, effortlessly!</h1>
+                <input class="search_bar input_bar" type="search"
+                placeholder="Search profiles, tags or locations..."
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Search profiles, tags or locations...'"/>
+            </main>
+
+            <footer class="footer">
+                <nav class="footer_links footer-left">
+                    <a href="about_us.html" class="footer_link text-link">About us</a>
+                    <a href="privacy_policy.html" class="footer_link text-link">Privacy Policy</a>
+                    <a href="contact_us.html" class="footer_link text-link">Contact Us</a>
+                </nav>
+            
+                <nav class="social_media footer-right"> <!--TODO Remove personal accounts from links-->
+                    <a href="https://www.facebook.com/profile.php?id=100017352248197#facebook" class="social-icon" id="facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/+255657858857" class="social-icon" id="whatsapp">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>                
+                    <a href="https://www.instagram.com/direct/inbox/?hl=en" class="social-icon" id="instagram">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>               
+                    </a>
+                </nav>
+            </footer>                   
+        </div>
+
+        <script>
+            const person = {
+                fname: "Beatrice",
+                lname: "Ndalichako",
+                age: 21,
+                university: "University of Florida"
+            }
+
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(person)
+            }
+
+            // TODO Qn to Bennett: Why did it return my data as a promise?
+            fetch('/api', options).then(response => {
+                console.log(response.json())
+            })
+        </script>
+    </body>
+</html>

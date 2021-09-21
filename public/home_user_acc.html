@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>InstaShop</title>
+        <script src="script.js"></script>
+        <link rel="shortcut icon" href="images/logo.png"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+        <script src="https://kit.fontawesome.com/2f584dc372.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--TODO check out the <base> element-->
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#default" class="logo">
+                <img src="images/logoresized.png" alt="logo">
+            </a>
+            <div class="header-right">
+                <a href="#account" class="account_icon" style="background-color: transparent;">
+                    <img src="images/account_icon.png" alt="Account Icon"/>
+                </a>
+                <a href="#recommended">Recommended</a>
+                <a href="#popular_shops">Popular Shops</a>
+                <a href="#recent_posts">Recent Posts</a>
+            </div>
+        </header>
+
+
+        <main class="central_region">
+            <h1 class="welcome_text">Browse Tanzanian instagram merchants and shops, effortlessly!</h1>
+            <input class="search_bar" type="text" placeholder="Search profiles, tags or locations..."
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Search profiles, tags or locations...'" />
+        </main>
+
+        <footer class="footer">
+            <nav class="footer_links text_link footer-left">
+                <a href="about_us.html" class="footer_link white_hover  link_text">About us</a>
+                <a href="privacy_policy.html" class="footer_link white_hover link_text">Privacy Policy</a>
+                <a href="contact_us.html" class="footer_link white_hover link_text">Contact Us</a>
+            </nav>
+
+            <nav class="social_media footer-right"> <!--TODO Remove personal accounts from links-->
+                <a href="https://www.facebook.com/profile.php?id=100017352248197#facebook" class="social_icon icon_link" id="facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#whatsapp" class="social_icon icon_link" id="whatsapp">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>                
+                <a href="#instagram" class="social_icon icon_link" id="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>               
+                </a>
+            </nav>
+        </footer>       
+    </body>
+</html>
